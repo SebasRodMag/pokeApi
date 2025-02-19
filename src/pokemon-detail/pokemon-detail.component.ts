@@ -1,9 +1,11 @@
-import { UpperCasePipe } from '@angular/common';
+import { CommonModule, UpperCasePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
+
 
 @Component({
   selector: 'app-pokemon-detail',
-  imports: [],
+  standalone:true,
+  imports: [CommonModule],
   templateUrl: `./pokemon-detail.component.html`,
   styleUrl: './pokemon-detail.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

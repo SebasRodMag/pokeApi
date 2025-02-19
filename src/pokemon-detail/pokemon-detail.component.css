@@ -1,8 +1,83 @@
 :host {
   display: block;
-  .contenedor{
-    display: flex;
-    justify-content: center;
-    background-color: cornflowerblue;
-  }
+  
+}
+
+.tarjeta {
+  width: 220px;
+  height: auto;
+  padding: 15px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tarjeta h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tarjeta img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.habilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.habilities p {
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .tarjeta button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tarjeta button:hover {
+  background: #0056b3;
+} */
+.tarjeta button {
+  border: 1px solid #4a2cf1;
+  background: #4a2cf1;
+  width: 90%;
+  color: #cac5e7;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tarjeta button:hover {
+  background: #cac5e7;
+  color: #4a2cf1;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 0 #616060;
+}
+.tarjeta button:active {
+  animation: shake 0.5s ease-in-out;
+  transform: translateY(0);
+  box-shadow: none;
 }

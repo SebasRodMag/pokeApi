@@ -1,0 +1,15 @@
+:host {
+    display: block;
+    background-color: #e8e8e8;
+    .logo{
+        display: flex;
+        margin: auto;
+        max-width: 400px;
+        filter: drop-shadow(2px 2px 5px black);
+
+    }
+    .logo img{
+        width: 100%;
+    }
+    
+}

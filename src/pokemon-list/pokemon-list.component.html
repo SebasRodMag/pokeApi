@@ -1,9 +1,24 @@
-@for (pokemon of Pokemon; track $index){
-    <app-pokemon-detail
-    [pokemon]="pokemon.name"
-    [imagen]="pokemon.src"
-    [habilities]="pokemon.habilities"
-    (clickName)="clickName($event)"
+<!-- @for (pokemon of Pokemon; track $index){
+<app-pokemon-detail 
+[pokemon]="pokemon.name" 
+[imagen]="pokemon.src" 
+[habilities]="pokemon.habilities"
+(clickName)="clickName($event)"
+/>
+} -->
 
-    />
-}
+<div class="titulo">
+    <h1>Lista de Pokémon</h1>
+</div>
+
+<br>
+<div class="contenedor-pokemon">
+    <app-pokemon-detail
+      *ngFor="let p of Pokemon"
+      [pokemon]="p.name"
+      [imagen]="p.src"
+      [habilities]="p.habilities"
+      (clickName)="clickName($event)">
+    </app-pokemon-detail>
+  </div>
+  
