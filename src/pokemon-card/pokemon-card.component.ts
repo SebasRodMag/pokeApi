@@ -2,18 +2,19 @@ import { CommonModule, UpperCasePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
 
 
+
 @Component({
-  selector: 'app-pokemon-detail',
+  selector: 'app-pokemon-card',
   standalone:true,
   imports: [CommonModule],
-  templateUrl: `./pokemon-detail.component.html`,
-  styleUrl: './pokemon-detail.component.css',
+  templateUrl: `./pokemon-card.component.html`,
+  styleUrl: './pokemon-card.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PokemonDetailComponent {
+export class PokemonCardComponent {
   @Input() pokemon: string ="";
   @Input() imagen: string = "";
-  @Input() habilities: string[] = [];
+
   @Output() clickName = new EventEmitter<string>();
   
 }

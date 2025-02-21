@@ -1,24 +1,12 @@
-<!-- @for (pokemon of Pokemon; track $index){
-<app-pokemon-detail 
-[pokemon]="pokemon.name" 
-[imagen]="pokemon.src" 
-[habilities]="pokemon.habilities"
-(clickName)="clickName($event)"
-/>
-} -->
-
-<div class="titulo">
-    <h1>Lista de Pokémon</h1>
-</div>
-
-<br>
+<app-paginator (nextPage)="nextPage()" (prevPage)="prevPage()"/>
 <div class="contenedor-pokemon">
-    <app-pokemon-detail
-      *ngFor="let p of Pokemon"
-      [pokemon]="p.name"
-      [imagen]="p.src"
-      [habilities]="p.habilities"
+  @for(pokemon of pokemons; track $index){
+    <app-pokemon-card
+      [pokemon]="pokemon.name"
+      [imagen]="'https://img.pokemondb.net/artwork/large/'+pokemon.name+'.jpg'"
       (clickName)="clickName($event)">
-    </app-pokemon-detail>
-  </div>
+    </app-pokemon-card>
   
+  }
+</div>
+<app-paginator (nextPage)="nextPage()" (prevPage)="prevPage()"/>

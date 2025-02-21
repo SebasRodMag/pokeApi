@@ -1,0 +1,10 @@
+@if(pokemon){
+    <pre>
+        {{pokemon.sprites.front_shiny | json}}
+    </pre>
+    
+    <img [src]="pokemon.sprites.front_shiny" alt="pokemon"/>
+}@else {
+    cargand...
+    <img src="https://artistlopi.weebly.com/blog/pokemon-go-capture-gif" alt="">
+}

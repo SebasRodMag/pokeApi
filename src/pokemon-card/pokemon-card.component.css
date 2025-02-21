@@ -25,23 +25,13 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
-.habilities {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-  margin: 10px 0;
-}
 
-.habilities p {
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 12px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
+
+
 
 /* .tarjeta button {
   margin-top: 10px;
