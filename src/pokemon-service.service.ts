@@ -7,6 +7,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PokemonServiceService {
+  private apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
+
+
+  getPokemon(nombre: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}${nombre}`);
+  }
   private http = inject(HttpClient);
 
 //TODO: cambiar any

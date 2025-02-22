@@ -2,5 +2,5 @@
     <h1>{{ pokemon }}</h1>
     <img [src]="imagen" [alt]="'Imagen de ' + pokemon" />
     
-    <button (click)="clickName.emit(pokemon)">Ver pokémon</button>
+    <button (click)="verPokemon(pokemon.name)">Ver pokémon</button><!--es el nombre del Pokémon que se está mostrando en la tarjeta.-->
 </div>

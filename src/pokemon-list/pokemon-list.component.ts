@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-pokemon-list',
   standalone:true,
-  imports: [PokemonCardComponent, PaginatorComponent],
+  imports: [PokemonCardComponent, PaginatorComponent, CommonModule],
   templateUrl: './pokemon-List.component.html',
   styleUrl: './pokemon-list.component.css',
   /* changeDetection: ChangeDetectionStrategy.OnPush, */
